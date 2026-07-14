@@ -27,6 +27,39 @@ header h1 {
   letter-spacing: 0.05em;
 }
 
+/* ── ブランドワードマーク ──
+   ヘッダー＝b2（Rの空洞に赤ドット）／フッター＝a（終止符ドット）。
+   詳細は assets/brand/BRAND.md を参照。 */
+
+/* トップのヒーロー見出し（紺帯・暗背景なので light を使用） */
+.brand-hero {
+  letter-spacing: normal;
+}
+
+.brand-hero img {
+  width: min(420px, 78vw);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 下層ページのヘッダーロゴ（クリックでトップへ戻る） */
+.brand-home {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.brand-home img {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+
+.brand-home:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
 header p {
   margin-top: 8px;
   font-size: 0.85rem;
@@ -109,6 +142,20 @@ footer {
   font-size: 0.8rem;
   color: #aaa;
   padding: 24px;
+}
+
+/* フッターの正式ワードマーク（a）。明色背景前提なので navy を使用 */
+.brand-foot {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+footer small {
+  display: block;
+  font-size: 0.8rem;
+  color: #aaa;
 }
 
 a {
